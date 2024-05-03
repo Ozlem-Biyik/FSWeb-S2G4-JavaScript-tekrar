@@ -32,7 +32,7 @@ const sayilar = [
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
 	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
-	3. Hesaplanan alanı döndürecek
+	3. Hesaplanan alanı döndürecek  hjhjjm
 */
 
 //Örneğin çözümü:
@@ -49,12 +49,13 @@ function KareninAlani(kenaruzunlugu) {
 	3. Çemberin çevresi hesaplanacaktır (💡 İPUCU: Çemberin çevresi = 2 * pi * yarıçap)
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
-
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+let yaricap = 5;
+function CemberinCevresi(yaricap) {
+  return 2*pi*yaricap; 
 }
-
-/* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+  console.log(CemberinCevresi(yaricap));
+/* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin 
+(console.log)  */
 
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
