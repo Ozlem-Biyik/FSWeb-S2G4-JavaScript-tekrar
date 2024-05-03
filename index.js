@@ -32,13 +32,15 @@ const sayilar = [
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
 	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
-	3. Hesaplanan alanı döndürecek  hjhjjm
+	3. Hesaplanan alanı döndürecek
 */
 
 //Örneğin çözümü:
+let kenaruzunlugu = 10;
 function KareninAlani(kenaruzunlugu) {
   return kenaruzunlugu * kenaruzunlugu;
 }
+console.log(KareninAlani(kenaruzunlugu));
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
