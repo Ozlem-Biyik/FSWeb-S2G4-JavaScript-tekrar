@@ -119,27 +119,64 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enbuyuk = sayilar[0];
+enkucuk = sayilar[0];
+for(let i = 1; i<sayilar.length; i++) {
+  if(sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+  if(sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  }
+}
+console.log(enbuyuk);
+console.log(enkucuk);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+sayilar.forEach(function(sayi) {
+  if(sayi %3 ===0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+console.log(ucetambolunenler);
 
 // 3c çözümü:
+ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
 
-/* kodlar buraya */
+console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
+
+console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
+
+console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+const tekrarlar = {};
+sayilar.forEach(function(sayi) {
+    if (tekrarlar[sayi] === undefined) {
+        tekrarlar[sayi] = 1;
+    } else {
+        tekrarlar[sayi]++;
+    }
+});
+tekraredensayilar = [];
+for (const sayi in tekrarlar) {
+    const tekrarSayisi = tekrarlar[sayi];
+    const string = `${sayi} sayısı ${tekrarSayisi} kere tekrar edilmiştir`;
+    tekraredensayilar.push(string);
+}
+
+console.log(tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
